@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pharmaverse Blog</title>
+<title>Welcome to the pharmaverse blog! – pharmaverse blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./media/pharmaverseblog.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -47,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -90,45 +100,101 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6ZDR80SCKG"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6ZDR80SCKG', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Pharmaverse Blog" href="index.xml"><meta property="og:title" content="Pharmaverse Blog">
+<link rel="alternate" type="application/rss+xml" title="pharmaverse blog" href="index.xml" data-external="1"><meta property="og:title" content="Welcome to the pharmaverse blog! – pharmaverse blog">
 <meta property="og:description" content="Short, fun and user-driven content around the pharmaverse.">
-<meta property="og:image" content="https://pharmaverse.github.io/blog/posts/2023-11-27_higher_order/admiral.png">
-<meta property="og:site-name" content="Pharmaverse Blog">
-<meta property="og:image:height" content="276">
-<meta property="og:image:width" content="369">
+<meta property="og:image" content="https://pharmaverse.github.io/blog/posts/2023-12-18_admiral_1_0/new_features.jpg">
+<meta property="og:site_name" content="pharmaverse blog">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Pharmaverse Blog</span>
+    <span class="navbar-title">pharmaverse blog</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/pharmaverse/blog" rel="" target=""><i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/pharmaverse/blog"> <i class="bi bi-github" role="img" aria-label="github">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./session_info.html"> 
+<span class="menu-text">Session Info</span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -136,13 +202,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Pharmaverse Blog</h1>
+      <h1 class="title">Welcome to the pharmaverse blog!</h1>
             <p class="subtitle lead">Short, fun and user-driven content around the pharmaverse.</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -154,19 +220,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p>Get notified of new posts by joining <a href="https://pharmaverse.slack.com">pharmaverse/slack</a></p>
+<p>Get notified of new posts by signing up to our <a href="https://forms.office.com/e/AJu4xWEGJx">periodic newsletter</a> or by joining <a href="https://pharmaverse.slack.com">pharmaverse/slack</a>. Be sure to check out <a href="https://www.r-bloggers.com">https://www.r-bloggers.com</a> as well.</p>
 </div></div>
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="ADaM">ADaM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ADaMs">ADaMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Date/Time">Date/Time <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tips and Tricks">Tips and Tricks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="admiral">admiral <span class="quarto-category-count">(9)</span></div><div class="category" data-category="community">community <span class="quarto-category-count">(6)</span></div><div class="category" data-category="displays">displays <span class="quarto-category-count">(1)</span></div><div class="category" data-category="falcon">falcon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rounding">rounding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="shiny">shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="submission">submission <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(47)</span></div><div class="category" data-category="ADaM">ADaM <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Community">Community <span class="quarto-category-count">(23)</span></div><div class="category" data-category="Conferences">Conferences <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Metadata">Metadata <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SDTM">SDTM <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Shiny">Shiny <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Submissions">Submissions <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TLG">TLG <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Technical">Technical <span class="quarto-category-count">(14)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
-<!-- <!-- mastodon verification -->
-<!-- <a rel="me" href="https://fosstodon.org/@djnavarro"></a> -->
-<!-- <a rel="me" href="https://genart.social/@djnavarro"></a> -->
+
 
 
 
@@ -198,32 +262,1149 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="admiral" data-listing-date-sort="1701043200000" data-listing-file-modified-sort="1701112083607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<div class="quarto-post image-right" data-index="0" data-categories="SDTM,Technical" data-listing-date-sort="1730332800000" data-listing-file-modified-sort="1731701853885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1420">
 <div class="thumbnail">
-<p><a href="./posts/2023-11-27_higher_order/higher_order.html"> <img src="./posts/2023-11-27_higher_order/admiral.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external"></a></p><a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-31_how__i__reb.../pharmaversesdtm.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-11-27_higher_order/higher_order.html">
 <h3 class="no-anchor listing-title">
-Believe in a higher order!
+<a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external">How I Rebuilt a Lost ECG Data Script in R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('SDTM'); return false;">
+SDTM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-11-27_higher_order/higher_order.html">
 <div class="listing-description">
-<p>A brief foray into the higher order functions in the {admiral} package.</p>
+<a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external">During my Data Science placement, I faced the challenge of recreating an ECG dataset for the {pharmaversesdtm} project after the original R script was lost. I explored the existing data, identified key parameters, and experimented with R packages to replicate the dataset structure and ensure SDTM compliance. Despite challenges with ensuring accurate ECG measurements, I eventually regenerated the dataset, learning valuable lessons in problem-solving and resilience.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-11-27_higher_order/higher_order.html">
+<a href="./posts/2024-10-31_how__i__reb.../how__i__rebuilt_a__lost__ec_g__data__script_in__r.html" class="no-external">
+<div class="listing-date">
+Oct 31, 2024
+</div>
+<div class="listing-author">
+Vladyslav Shuliar
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="SDTM" data-listing-date-sort="1729728000000" data-listing-file-modified-sort="1731701853885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1927">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external"></a></p><a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-24_introducing.../sdtmoak.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external">Introducing sdtm.oak</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('SDTM'); return false;">
+SDTM
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external">An EDC &amp; Data Standards agnostic solution that enables the pharmaceutical programming community to develop SDTM datasets in R</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-24_introducing.../introducing_sdtm.oak.html" class="no-external">
+<div class="listing-date">
+Oct 24, 2024
+</div>
+<div class="listing-author">
+Rammprasad Ganapathy
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Submissions,Technical" data-listing-date-sort="1729036800000" data-listing-file-modified-sort="1731701853885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1742">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external"></a></p><a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-16_the__tensio.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external">The Tension of High-Performance Computing: Reproducibility vs.&nbsp;Parallelization</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Submissions'); return false;">
+Submissions
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external">Discover how to manage parallel processing and ensure reproducibility in drug development using the {mirai} package and other HPC tools.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-16_the__tensio.../the__tension_of__high-_performance__computing:__reproducibility_vs.__parallelization.html" class="no-external">
+<div class="listing-date">
+Oct 16, 2024
+</div>
+<div class="listing-author">
+Alexandros Kouretsis, APPSILON
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Shiny,Technical" data-listing-date-sort="1728604800000" data-listing-file-modified-sort="1731701853885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="409">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external"></a></p><a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive.gif" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external">roxy.shinylive - shinylive applications in roxygen documentation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external">Introducing a <code>roxy.shinylive</code> - a new tool for Shiny package developers</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-11_roxy.shinyl.../roxy.shinylive_-_shinylive_applications_in_roxygen_documentation.html" class="no-external">
+<div class="listing-date">
+Oct 11, 2024
+</div>
+<div class="listing-author">
+Pawel Rucki
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="ADaM,Community" data-listing-date-sort="1726444800000" data-listing-file-modified-sort="1731701853881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901">
+<div class="thumbnail">
+<p><a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external"></a></p><a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-09-16_university_undergraduate_report/pharmaverseadam.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external">Undergraduate University Statistics Report using pharmaverseadam data</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external">A short journal highlighting how I was able to use {pharmaverseadam} for my university work </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-16_university_undergraduate_report/university_undergraduate_report.html" class="no-external">
+<div class="listing-date">
+Sep 16, 2024
+</div>
+<div class="listing-author">
+Syon Parashar
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Technical" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1731701853881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1299">
+<div class="thumbnail">
+<p><a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external"></a></p><a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-09-11_writing_my_first.../why-cicd.jpg" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external">Writing my first custom CICD action for the pharmaverseblog</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external">I recently wrote my first custom CICD pipeline for the pharmaverseblog, in an effort to police the use of post tags within the blog. These are my learnings and experiences!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-11_writing_my_first.../writing_my_first_custom_ci_cd_action_for_the_pharmaverseblog.html" class="no-external">
+<div class="listing-date">
+Sep 11, 2024
+</div>
+<div class="listing-author">
+Edoardo Mancini
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Community" data-listing-date-sort="1725321600000" data-listing-file-modified-sort="1731701853881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
+<div class="thumbnail">
+<p><a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external"></a></p><a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-09-03_meet_our__divers.../MeetLaura.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external">Meet our Diversity Champion – Laura Needleman</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external">On behalf of the pharmaverse council, we’d like to introduce you to Laura Needleman – an active member of our community who has volunteered to support us as a champion around DE&amp;I.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-03_meet_our__divers.../meet_our__diversity__champion_–__laura__needleman.html" class="no-external">
+<div class="listing-date">
+Sep 3, 2024
+</div>
+<div class="listing-author">
+Laura Needleman
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="Shiny,Community" data-listing-date-sort="1724112000000" data-listing-file-modified-sort="1731701853877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
+<div class="thumbnail">
+<p><a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external"></a></p><a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-08-20_teal_submission_.../teal.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external">teal and Posit Shiny Contest 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external">Introducing the {teal} category in the Post Shiny Contest 2024 and informing users on resources to make their teal app for the submission.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-20_teal_submission_.../teal_submission_for__posit__shiny__contest_2024.html" class="no-external">
+<div class="listing-date">
+Aug 20, 2024
+</div>
+<div class="listing-author">
+Dony Unardi, Pawel Rucki
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Technical,Community,Shiny" data-listing-date-sort="1723680000000" data-listing-file-modified-sort="1731701853873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2213">
+<div class="thumbnail">
+<p><a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external"></a></p><a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-pharmaverse.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external">Exploring the Top 5 pharmaverse Packages</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external">This blog explores the top 5 popular pharmaverse packages for clinical reporting featuring {rtables}, {admiral}, {teal}, {riskmetric}, and {tidyCDISC} for improving data analysis and to ensure compliance.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-15_top_five_pharmaverse_packages/top-five-packages.html" class="no-external">
+<div class="listing-date">
+Aug 15, 2024
+</div>
+<div class="listing-author">
+Gift Kenneth, APPSILON
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="Community" data-listing-date-sort="1721779200000" data-listing-file-modified-sort="1731701853833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="thumbnail">
+<p><a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external"></a></p><a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-07-24_working__groups_.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external">Working Groups Updates</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external">An update from pharmaverse council around how packages will get included in pharmaverse in future.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-24_working__groups_.../working__groups__updates.html" class="no-external">
+<div class="listing-date">
+Jul 24, 2024
+</div>
+<div class="listing-author">
+pharmaverse council
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="Technical,Shiny,Community" data-listing-date-sort="1721606400000" data-listing-file-modified-sort="1731701853833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1255">
+<div class="thumbnail">
+<p><a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external"></a></p><a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-07-22_teal_app_development_pharmaverseadam/images/Asset 1.gif" style="height: 220px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external">Simplifying Clinical Data Dashboards with {teal} and {pharmaverseadam}</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external">Learn how to quickly develop interactive and reproducible clinical data dashboards using {teal} and {pharmaverseadam}.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-22_teal_app_development_pharmaverseadam/teal-app-development.html" class="no-external">
+<div class="listing-date">
+Jul 22, 2024
+</div>
+<div class="listing-author">
+Pavel Demin, Dror Berel, APPSILON
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="Technical" data-listing-date-sort="1721088000000" data-listing-file-modified-sort="1731701853653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="731">
+<div class="thumbnail">
+<p><a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external"></a></p><a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-07-08_unix_vs_sas_date.../clock_DALL-E_2.jpeg" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external">Unix versus SAS Time</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external">This blog explores SAS and R date handling differences, focusing on epoch discrepancies and data types, and provides key tips for accurate date conversions to prevent a 10-year date shift.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-08_unix_vs_sas_date.../unix_vs_sas_datetime.html" class="no-external">
+<div class="listing-date">
+Jul 16, 2024
+</div>
+<div class="listing-author">
+Céline Piraux
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="Community" data-listing-date-sort="1719964800000" data-listing-file-modified-sort="1731701853653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="728">
+<div class="thumbnail">
+<p><a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external"></a></p><a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-07-03_introducing_a_ne.../pharmaverse.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external">Introducing a </a><a href="https://www.coursera.org/learn/hands-on-clinical-reporting-using-r">new Coursera course</a> for hands-on clinical data science using R.
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external">Releasing <span>our second (hands-on) Coursera course</span>, aimed at enhancing the skills of data scientists and shedding light on the impact of R open-source software within the industry. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html" class="no-external">
+<div class="listing-date">
+Jul 3, 2024
+</div>
+<div class="listing-author">
+Joel Laxamana, Stefan Thoma
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="ADaM" data-listing-date-sort="1718841600000" data-listing-file-modified-sort="1731701853649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1712">
+<div class="thumbnail">
+<p><a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external"></a></p><a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-06-07_admiral_1.1_is.../admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external">{admiral} 1.1.1 is here!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external">Get to know what awaits you with the new release of the {admiral} package, including enhanced error messaging, improved documentation and much more!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-07_admiral_1.1_is.../admiral_1.1_is_here.html" class="no-external">
+<div class="listing-date">
+Jun 20, 2024
+</div>
+<div class="listing-author">
+Edoardo Mancini, Ben Straub
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="Metadata,ADaM,Community" data-listing-date-sort="1718582400000" data-listing-file-modified-sort="1731701853653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
+<div class="thumbnail">
+<p><a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external"></a></p><a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-06-17_new_admiral_ex.../coming_soon.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external">New {admiral} extension packages: {admiralpeds} &amp; more coming soon!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Metadata'); return false;">
+Metadata
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external">We are very excited to announce that new extension packages are expected very soon in the {admiral} family: {admiralpeds}, a pediatrics extension, and another extension (name TBC) for obesity in clinical trials</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-17_new_admiral_ex.../new_admiral_extension_packages_admiralpeds_coming_soon.html" class="no-external">
+<div class="listing-date">
+Jun 17, 2024
+</div>
+<div class="listing-author">
+Fanny Gautier, Lina Patil
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="Community" data-listing-date-sort="1717113600000" data-listing-file-modified-sort="1731701853649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="thumbnail">
+<p><a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external"></a></p><a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-05-31_diversity_&amp;__inc.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external">Diversity &amp; Inclusion in pharmaverse</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external">An update from pharmaverse council regarding diversity and inclusion within our community.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-31_diversity_&amp;__inc.../diversity_&amp;__inclusion_in_pharmaverse.html" class="no-external">
+<div class="listing-date">
+May 31, 2024
+</div>
+<div class="listing-author">
+pharmaverse council
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="Community,Conferences" data-listing-date-sort="1716940800000" data-listing-file-modified-sort="1731701853649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1199">
+<div class="thumbnail">
+<p><a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external"></a></p><a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-05-29_our_experience_a.../new_dev1.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external">Our experience as new admiral developers, coming from a CRO</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Conferences'); return false;">
+Conferences
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external">As the first CRO having joined the {admiral} family, we are very excited to share with you our first steps and thoughts in this new adventure</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-29_our_experience_a.../our_experience_as_new_admiral_developers.html" class="no-external">
+<div class="listing-date">
+May 29, 2024
+</div>
+<div class="listing-author">
+Fanny Gautier, Lina Patil
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="TLG,Shiny" data-listing-date-sort="1715126400000" data-listing-file-modified-sort="1731701853649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="489">
+<div class="thumbnail">
+<p><a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external"></a></p><a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external">TLG Catalog 🤝 WebR</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('TLG'); return false;">
+TLG
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external">Introducing WebR to TLG Catalog: A Game Changer for Interactive Learning</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-08_tlg_catalog_webr/tlg_catalog_webr.html" class="no-external">
+<div class="listing-date">
+May 8, 2024
+</div>
+<div class="listing-author">
+Pawel Rucki
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="Community" data-listing-date-sort="1714608000000" data-listing-file-modified-sort="1731701853637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1033">
+<div class="thumbnail">
+<p><a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external"></a></p><a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-04-15_de-_mystifying__.../Rlogo.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external">De-Mystifying R Programming in Clinical Trials</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external">A blog highlighting the benefits/limitations of using R Programming and using the right tools to create value</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-15_de-_mystifying__.../de-_mystifying__r__programming_in__clinical__trials.html" class="no-external">
+<div class="listing-date">
+May 2, 2024
+</div>
+<div class="listing-author">
+Venkatesan Balu
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="Community" data-listing-date-sort="1714348800000" data-listing-file-modified-sort="1731701853637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
+<div class="thumbnail">
+<p><a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external"></a></p><a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-04-29_appsilon_and__sa.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external">Appsilon and Sanofi join the pharmaverse council!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external">Updates to the pharmaverse council</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-29_appsilon_and__sa.../appsilon_and__sanofi_joins_the_pharmaverse_council!.html" class="no-external">
+<div class="listing-date">
+Apr 29, 2024
+</div>
+<div class="listing-author">
+Ari Siggaard Knoph
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="TLG,Shiny" data-listing-date-sort="1712534400000" data-listing-file-modified-sort="1731701853633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
+<div class="thumbnail">
+<p><a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external"></a></p><a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-04-08_tmc_cran/teal.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external">teal.modules.clinical v0.9.0 is now on CRAN!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('TLG'); return false;">
+TLG
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external">This package release now completes the suite of <span>{teal}</span> family of packages recently released to CRAN.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-08_tmc_cran/tmc_cran.html" class="no-external">
+<div class="listing-date">
+Apr 8, 2024
+</div>
+<div class="listing-author">
+Leena Khatri
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="ADaM,SDTM" data-listing-date-sort="1711670400000" data-listing-file-modified-sort="1731701853629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1226">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external"></a></p><a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-03-29_xportr_0_4_0/xportr.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external">xportr 0.4.0</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SDTM'); return false;">
+SDTM
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external">xportr is a tool tailor-made for clinical programmers, enabling them to generate CDISC-compliant XPT files for SDTM and/or ADaM. It streamlines the preparation on xpt files, ensuring they are primed for submission to clinical data validation applications or regulatory agencies.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-29_xportr_0_4_0/xportr_0_4_0.html" class="no-external">
+<div class="listing-date">
+Mar 29, 2024
+</div>
+<div class="listing-author">
+Sadchla Mascary
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="Community" data-listing-date-sort="1710115200000" data-listing-file-modified-sort="1731701853629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1239">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external"></a></p><a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-03-11_tips_for__first_.../contributors.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external">Tips for First Time Contributors</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external">Open source can be daunting the first time you dive in - this blog will help you get started!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-11_tips_for__first_.../tips_for__first__time__contributors.html" class="no-external">
+<div class="listing-date">
+Mar 11, 2024
+</div>
+<div class="listing-author">
+Ross Farrugia
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="Community" data-listing-date-sort="1709510400000" data-listing-file-modified-sort="1731701853629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1173">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external"></a></p><a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-03-04_inside_the__phar.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external">Inside the pharmaverse</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external">A short blog to help the Pharmaverse community understand how Pharmaverse is governed.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-04_inside_the__phar.../inside_the__pharmaverse.html" class="no-external">
+<div class="listing-date">
+Mar 4, 2024
+</div>
+<div class="listing-author">
+Michael Rimler
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="Submissions,Community" data-listing-date-sort="1709251200000" data-listing-file-modified-sort="1731701853629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1293">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external"></a></p><a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-03-01_rhino_shiny_app_validation/Rhino.webp" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external">Rhino: A Step Forward in Validating Shiny Apps</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Submissions'); return false;">
+Submissions
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external">In this post, we explore the importance of validation in the pharmaceutical industry and how Rhino framework aids in ensuring reliability and accuracy of Shiny applications.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-01_rhino_shiny_app_validation/rhino_shiny_app_validation.html" class="no-external">
+<div class="listing-date">
+Mar 1, 2024
+</div>
+<div class="listing-author">
+Kamil Żyła, Ege Can Taşlıçukur, APPSILON
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="ADaM,Technical" data-listing-date-sort="1708905600000" data-listing-file-modified-sort="1731701853625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external"></a></p><a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-03-01_admiral_filter_functions/filter_shirt.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external">Filter out the noise!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external">A brief exposition of the filter_* functions in {admiral} - what they do and how to use them.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-01_admiral_filter_functions/admiral_filter_functions.html" class="no-external">
+<div class="listing-date">
+Feb 26, 2024
+</div>
+<div class="listing-author">
+Edoardo Mancini
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="Conferences" data-listing-date-sort="1708905600000" data-listing-file-modified-sort="1731701853621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="759">
+<div class="thumbnail">
+<p><a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external"></a></p><a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-02-14_iscr_conference/iscr_logo.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external">ISCR 17th Annual Conference 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Conferences'); return false;">
+Conferences
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external">This blog highlights my experience of presenting at Indian Society for Clinical Research (ISCR) 17th Annual Conference 2024.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02-14_iscr_conference/iscr_conference.html" class="no-external">
+<div class="listing-date">
+Feb 26, 2024
+</div>
+<div class="listing-author">
+Pooja Kumari
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="TLG,Shiny" data-listing-date-sort="1707868800000" data-listing-file-modified-sort="1731701853593" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
+<div class="thumbnail">
+<p><a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external"></a></p><a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-02-13_teal_on_cran/teal.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external">teal is now available on CRAN 🎉</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('TLG'); return false;">
+TLG
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external">Announcing the release of teal v0.15.0 on CRAN!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02-13_teal_on_cran/teal_on_cran.html" class="no-external">
+<div class="listing-date">
+Feb 14, 2024
+</div>
+<div class="listing-author">
+Dony Unardi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="Submissions" data-listing-date-sort="1706745600000" data-listing-file-modified-sort="1731701853577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1709">
+<div class="thumbnail">
+<p><a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external"></a></p><a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-02-01_containers_webassembly_submission/FDA_WebR_Rhino.webp" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external">Testing Containers and WebAssembly in Submissions to the FDA</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Submissions'); return false;">
+Submissions
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external">In this post, we dig into the ongoing efforts undertaken to evaluate new technologies for submissions to the Food and Drug Administration (FDA). These transformative approaches, including WebAssembly and containers, hold immense potential to transform the regulatory landscape and streamline the submission process.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02-01_containers_webassembly_submission/containers_and_webassembly_submissions.html" class="no-external">
+<div class="listing-date">
+Feb 1, 2024
+</div>
+<div class="listing-author">
+André Veríssimo, Tymoteusz Makowski, Pedro Silva, Vedha Viyash, APPSILON
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="Community,ADaM,Metadata" data-listing-date-sort="1706227200000" data-listing-file-modified-sort="1731701853577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894">
+<div class="thumbnail">
+<p><a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external"></a></p><a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-12-20_p_k__examples/pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external">PK Examples</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Metadata'); return false;">
+Metadata
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external">Explore PK ADaM Examples on Pharmaverse Examples Page</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-12-20_p_k__examples/p_k__examples.html" class="no-external">
+<div class="listing-date">
+Jan 26, 2024
+</div>
+<div class="listing-author">
+Jeff Dickinson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="ADaM" data-listing-date-sort="1704326400000" data-listing-file-modified-sort="1731701853573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1972">
+<div class="thumbnail">
+<p><a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external"></a></p><a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-12-18_admiral_1_0/new_features.jpg" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external">admiral 1.0.0</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external">1.0.0 brings a commitment to stability, new features, a few bug fixes, argument alignment and onboarding resources!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-12-18_admiral_1_0/admiral_1_0.html" class="no-external">
+<div class="listing-date">
+Jan 4, 2024
+</div>
+<div class="listing-author">
+Ben Straub
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="Community" data-listing-date-sort="1704326400000" data-listing-file-modified-sort="1731701853577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
+<div class="thumbnail">
+<p><a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external"></a></p><a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-01-04_end_of__year__up.../pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external">End of Year Update from the pharmaverse Council</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external">2023 Was a big year - let’s talk about it!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-01-04_end_of__year__up.../end_of__year__update_from_the__pharmaverse__council.html" class="no-external">
+<div class="listing-date">
+Jan 4, 2024
+</div>
+<div class="listing-author">
+Mike Stackhouse
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="ADaM,Technical" data-listing-date-sort="1701043200000" data-listing-file-modified-sort="1731701853573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2020">
+<div class="thumbnail">
+<p><a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external"></a></p><a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-11-27_higher_order/admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external">Believe in a higher order!</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external">A brief foray into the higher order functions in the {admiral} package.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-11-27_higher_order/higher_order.html" class="no-external">
 <div class="listing-date">
 Nov 27, 2023
 </div>
@@ -233,32 +1414,33 @@ Edoardo Mancini
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="admiral" data-listing-date-sort="1698624000000" data-listing-file-modified-sort="1701112083607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12">
+<div class="quarto-post image-right" data-index="33" data-categories="ADaM,Technical" data-listing-date-sort="1698624000000" data-listing-file-modified-sort="1731701853573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2238">
 <div class="thumbnail">
-<p><a href="./posts/2023-10-30_floating_point/floating_point.html"> <img src="./posts/2023-10-30_floating_point/admiral.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external"></a></p><a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-10-30_floating_point/admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-10-30_floating_point/floating_point.html">
 <h3 class="no-anchor listing-title">
-Floating point
+<a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external">Floating point</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-10-30_floating_point/floating_point.html">
 <div class="listing-description">
-<p>The untold story of how admiral deals with floating points.</p>
+<a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external">The untold story of how admiral deals with floating points.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-10-30_floating_point/floating_point.html">
+<a href="./posts/2023-10-30_floating_point/floating_point.html" class="no-external">
 <div class="listing-date">
 Oct 30, 2023
 </div>
@@ -268,35 +1450,33 @@ Stefan Thoma
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="submission,community" data-listing-date-sort="1696896000000" data-listing-file-modified-sort="1701112083607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="34" data-categories="Submissions,Community" data-listing-date-sort="1696896000000" data-listing-file-modified-sort="1731701853569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1300">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html"> <img src="./posts/2023-08-14_rhino_submission_2/Rhino_LS.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external"></a></p><a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-14_rhino_submission_2/Rhino_LS.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html">
 <h3 class="no-anchor listing-title">
-Reproducing the R Submissions Pilot 2 Shiny Application using Rhino
+<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external">Reproducing the R Submissions Pilot 2 Shiny Application using Rhino</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('submission'); return false;">
-submission
+<div class="listing-category" onclick="window.quartoListingCategory('Submissions'); return false;">
+Submissions
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
 </div>
 </div>
-<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html">
 <div class="listing-description">
-There is significant momentum in driving the adoption of R…
+<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external">A short blog post about a Rhino pilot submission.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html">
+<a href="./posts/2023-08-14_rhino_submission_2/rhino_submission_2.html" class="no-external">
 <div class="listing-date">
 Oct 10, 2023
 </div>
@@ -306,38 +1486,33 @@ Ismael Rodriguez, Vedha Viyash, André Veríssimo, APPSILON
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="admiral,ADaM,Date/Time" data-listing-date-sort="1695686400000" data-listing-file-modified-sort="1701112083607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="35" data-categories="ADaM,Technical" data-listing-date-sort="1695686400000" data-listing-file-modified-sort="1731701853569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1979">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html"> <img src="./posts/2023-09-26_date_functions_and_imputation/admiral.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external"></a></p><a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-09-26_date_functions_and_imputation/admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html">
 <h3 class="no-anchor listing-title">
-Date/Time Functions and Imputation in {admiral}
+<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external">Date/Time Functions and Imputation in {admiral}</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
-</div>
 <div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
 ADaM
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Date/Time'); return false;">
-Date/Time
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html">
 <div class="listing-description">
-<p>Dates, times and imputation can be a frustrating facet of any programming language. Here’s how {admiral} makes all of this easy!</p>
+<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external">Dates, times and imputation can be a frustrating facet of any programming language. Here’s how {admiral} makes all of this easy!</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html">
+<a href="./posts/2023-09-26_date_functions_and_imputation/date_functions_and_imputation.html" class="no-external">
 <div class="listing-date">
 Sep 26, 2023
 </div>
@@ -347,32 +1522,30 @@ Edoardo Mancini
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="community" data-listing-date-sort="1693353600000" data-listing-file-modified-sort="1701112083607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="36" data-categories="Community" data-listing-date-sort="1693353600000" data-listing-file-modified-sort="1731701853573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1073">
 <div class="thumbnail">
-<p><a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html"> <img src="./posts/2023-10-10_pharmaverse_story/pharmaverse.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external"></a></p><a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-10-10_pharmaverse_story/pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html">
 <h3 class="no-anchor listing-title">
-The pharmaverse (hi)story
+<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external">The pharmaverse (hi)story</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
 </div>
 </div>
-<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html">
 <div class="listing-description">
-Pharmaverse: from motivation to present
+<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external">The pharmaverse: from motivation to present</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html">
+<a href="./posts/2023-10-10_pharmaverse_story/pharmaverse_story.html" class="no-external">
 <div class="listing-date">
 Aug 30, 2023
 </div>
@@ -382,32 +1555,30 @@ Nicholas Eugenio
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="rounding" data-listing-date-sort="1692662400000" data-listing-file-modified-sort="1701112083599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
+<div class="quarto-post image-right" data-index="37" data-categories="Technical" data-listing-date-sort="1692662400000" data-listing-file-modified-sort="1731701853565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2783">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-24_rounding/rounding.html"> <img src="./posts/2023-07-24_rounding/rounding.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-07-24_rounding/rounding.html" class="no-external"></a></p><a href="./posts/2023-07-24_rounding/rounding.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-24_rounding/rounding.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-07-24_rounding/rounding.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-24_rounding/rounding.html">
 <h3 class="no-anchor listing-title">
-Rounding
+<a href="./posts/2023-07-24_rounding/rounding.html" class="no-external">Rounding</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-24_rounding/rounding.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('rounding'); return false;">
-rounding
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-07-24_rounding/rounding.html">
 <div class="listing-description">
-<p>Exploration of some commonly used rounding methods and their corresponding functions in SAS and R, with a focus on ‘round half up’ and reliable solutions for numerical precision challenges</p>
+<a href="./posts/2023-07-24_rounding/rounding.html" class="no-external">Exploration of some commonly used rounding methods and their corresponding functions in SAS and R, with a focus on ‘round half up’ and reliable solutions for numerical precision challenges.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-24_rounding/rounding.html">
+<a href="./posts/2023-07-24_rounding/rounding.html" class="no-external">
 <div class="listing-date">
 Aug 22, 2023
 </div>
@@ -417,35 +1588,30 @@ Kangjie Zhang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="admiral,ADaMs" data-listing-date-sort="1691452800000" data-listing-file-modified-sort="1701112083599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="38" data-categories="ADaM" data-listing-date-sort="1691452800000" data-listing-file-modified-sort="1731701853565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-08_study_day/study_day.html"> <img src="./posts/2023-08-08_study_day/admiral.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-08-08_study_day/study_day.html" class="no-external"></a></p><a href="./posts/2023-08-08_study_day/study_day.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-08_study_day/admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-08-08_study_day/study_day.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-08_study_day/study_day.html">
 <h3 class="no-anchor listing-title">
-It’s all relative? - Calculating Relative Days using admiral
+<a href="./posts/2023-08-08_study_day/study_day.html" class="no-external">It’s all relative? - Calculating Relative Days using admiral</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-08_study_day/study_day.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ADaMs'); return false;">
-ADaMs
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
 </div>
 </div>
-<a href="./posts/2023-08-08_study_day/study_day.html">
 <div class="listing-description">
-Creating <code>--DY</code> variables for your ADaMs is super easy using <code>derive_vars_dy()</code> from the admiral package.
+<a href="./posts/2023-08-08_study_day/study_day.html" class="no-external">Creating <code>--DY</code> variables for your ADaMs is super easy using <code>derive_vars_dy()</code> from the admiral package.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-08_study_day/study_day.html">
+<a href="./posts/2023-08-08_study_day/study_day.html" class="no-external">
 <div class="listing-date">
 Aug 8, 2023
 </div>
@@ -455,35 +1621,36 @@ Ben Straub
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="community,admiral" data-listing-date-sort="1690243200000" data-listing-file-modified-sort="1701112083595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="39" data-categories="Community,Conferences,ADaM" data-listing-date-sort="1690243200000" data-listing-file-modified-sort="1731701853561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1593">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html"> <img src="./posts/2023-07-20_cross_company_dev/Rbasel.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external"></a></p><a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-20_cross_company_dev/Rbasel.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html">
 <h3 class="no-anchor listing-title">
-Cross-Industry Open Source Package Development
+<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external">Cross-Industry Open Source Package Development</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('Conferences'); return false;">
+Conferences
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
 </div>
 </div>
-<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html">
 <div class="listing-description">
-This post is based on a talk given at the regional useR! conference on July 21st 2023 in Basel. I took the opportunity to present my personal perspective on the current cross-industry package development efforts with a particular focus on the transformation of the…
+<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external">This post is based on <span>a talk</span> given at the <span>regional useR! conference on July 21st 2023 in Basel</span>.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html">
+<a href="./posts/2023-07-20_cross_company_dev/cross_industry_dev.html" class="no-external">
 <div class="listing-date">
 Jul 25, 2023
 </div>
@@ -493,35 +1660,33 @@ Stefan Thoma
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="ADaMs,Tips and Tricks" data-listing-date-sort="1689292800000" data-listing-file-modified-sort="1701112083595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="40" data-categories="ADaM,Technical" data-listing-date-sort="1689292800000" data-listing-file-modified-sort="1731701853561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="495">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-14_code_sections/code_sections.html"> <img src="./posts/2023-07-14_code_sections/rstudio-hex.PNG" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external"></a></p><a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-14_code_sections/rstudio-hex.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-14_code_sections/code_sections.html">
 <h3 class="no-anchor listing-title">
-How to use Code Sections
+<a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external">How to use Code Sections</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ADaMs'); return false;">
-ADaMs
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tips and Tricks'); return false;">
-Tips and Tricks
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-07-14_code_sections/code_sections.html">
 <div class="listing-description">
-The <code>admiral</code> package embraces a modular style of programming, where blocks of code are pieced together in sequence to create an ADaM dataset. However, with the well-documented…<strong></strong>
+<a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external">Code sections - are you using them right?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-14_code_sections/code_sections.html">
+<a href="./posts/2023-07-14_code_sections/code_sections.html" class="no-external">
 <div class="listing-date">
 Jul 14, 2023
 </div>
@@ -531,32 +1696,33 @@ Edoardo Mancini
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="admiral" data-listing-date-sort="1688947200000" data-listing-file-modified-sort="1701112083595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="41" data-categories="ADaM,Technical" data-listing-date-sort="1688947200000" data-listing-file-modified-sort="1731701853557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html"> <img src="./posts/2023-07-10_blanks_and_nas/admiral.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external"></a></p><a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-10_blanks_and_nas/admiral.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html">
 <h3 class="no-anchor listing-title">
-Blanks and NAs
+<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external">Blanks and NAs</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Technical'); return false;">
+Technical
 </div>
 </div>
-<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html">
 <div class="listing-description">
-<p>Reading SAS datasets into R. The data is not always as it seems!</p>
+<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external">Reading SAS datasets into R. The data is not always as it seems!</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html">
+<a href="./posts/2023-07-10_blanks_and_nas/blanks_and_nas.html" class="no-external">
 <div class="listing-date">
 Jul 10, 2023
 </div>
@@ -566,35 +1732,30 @@ Ben Straub
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="falcon,displays" data-listing-date-sort="1688860800000" data-listing-file-modified-sort="1701112083595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="42" data-categories="TLG" data-listing-date-sort="1688860800000" data-listing-file-modified-sort="1731701853557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="400">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-09_falcon/falcon.html"> <img src="./posts/2023-07-09_falcon/falcon.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external"></a></p><a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-09_cardinal/cardinal.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-09_falcon/falcon.html">
 <h3 class="no-anchor listing-title">
-falcon
+<a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external">cardinal</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('falcon'); return false;">
-falcon
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('displays'); return false;">
-displays
+<div class="listing-category" onclick="window.quartoListingCategory('TLG'); return false;">
+TLG
 </div>
 </div>
-<a href="./posts/2023-07-09_falcon/falcon.html">
 <div class="listing-description">
-The {falcon} initiative is an industry collaborative effort under {pharmaverse} that unites Boehringer Ingelheim, Moderna, Roche, and Sanofi with the aspiration of building and open-sourcing a comprehensive catalog of harmonized tables, listings, and…
+<a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external">The <span>{cardinal} initiative</span> is an industry collaborative effort under <span>pharmaverse</span>with the aspiration of building and open-sourcing a comprehensive catalog of harmonized TLGs for clinical study reporting.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-09_falcon/falcon.html">
+<a href="./posts/2023-07-09_cardinal/falcon.html" class="no-external">
 <div class="listing-date">
 Jul 9, 2023
 </div>
@@ -604,32 +1765,30 @@ Vincent Shen
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="community" data-listing-date-sort="1687910400000" data-listing-file-modified-sort="1701112083595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="43" data-categories="Community" data-listing-date-sort="1687910400000" data-listing-file-modified-sort="1731701853553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="471">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-28_welcome/index.html"> <img src="./posts/2023-06-28_welcome/pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-06-28_welcome/index.html" class="no-external"></a></p><a href="./posts/2023-06-28_welcome/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-06-28_welcome/pharmaverse.PNG" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-06-28_welcome/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-28_welcome/index.html">
 <h3 class="no-anchor listing-title">
-Hello pharmaverse
+<a href="./posts/2023-06-28_welcome/index.html" class="no-external">Hello pharmaverse</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-28_welcome/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
 </div>
 </div>
-<a href="./posts/2023-06-28_welcome/index.html">
 <div class="listing-description">
-<p>Short, fun and user-driven content around the pharmaverse.</p>
+<a href="./posts/2023-06-28_welcome/index.html" class="no-external">Short, fun and user-driven content around the pharmaverse.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-28_welcome/index.html">
+<a href="./posts/2023-06-28_welcome/index.html" class="no-external">
 <div class="listing-date">
 Jun 28, 2023
 </div>
@@ -639,35 +1798,33 @@ Ben Straub
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="community,admiral" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1701112083587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="44" data-categories="Community,ADaM" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1731701853549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-27_hackathon_writeup/index.html"> <img src="./posts/2023-06-27_hackathon_writeup/community.png" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external"></a></p><a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-06-27_hackathon_writeup/community.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-27_hackathon_writeup/index.html">
 <h3 class="no-anchor listing-title">
-Admiral Hackathon 2023 Revisited
+<a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external">Admiral Hackathon 2023 Revisited</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
 </div>
 </div>
-<a href="./posts/2023-06-27_hackathon_writeup/index.html">
 <div class="listing-description">
-<p>Let’s have a look at the Admiral Hackathon 2023 together.</p>
+<a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external">Let’s have a look at the Admiral Hackathon 2023 together.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-27_hackathon_writeup/index.html">
+<a href="./posts/2023-06-27_hackathon_writeup/index.html" class="no-external">
 <div class="listing-date">
 Jun 27, 2023
 </div>
@@ -677,81 +1834,74 @@ Stefan Thoma
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="admiral" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1701112083583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="45" data-categories="Shiny,Community,ADaM" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1731701853537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2503">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html"> <img src="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.jpg" class="thumbnail-image" style="height: 220px;"> </a></p>
+<p><a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external"></a></p><a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-06-27__hackathon_app/shiny_klee.png" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html">
 <h3 class="no-anchor listing-title">
-Derive a new parameter computed from the value of other parameters
+<a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external">Hackathon Feedback Application</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
+<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Community'); return false;">
+Community
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
 </div>
 </div>
-<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html">
 <div class="listing-description">
-<p>Use <code>admiral::derive_param_computed()</code> like a calculator to derive new parameters/rows based on existing ones</p>
+<a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external">Going through the process of creating a shiny app for the <code>admiral</code> hackathon. The shiny app allows users to check their solutions autonomously, gives feedback, and rates their results.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html">
+<a href="./posts/2023-06-27__hackathon_app/index.html" class="no-external">
+<div class="listing-date">
+Jun 27, 2023
+</div>
+<div class="listing-author">
+Stefan Thoma
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="46" data-categories="ADaM" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1731701853541" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="thumbnail">
+<p><a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external"></a></p><a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.jpg" class="thumbnail-image" style="height: 220px;"></p>
+</a><p><a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external">Derive a new parameter computed from the value of other parameters</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ADaM'); return false;">
+ADaM
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external">Use <code>admiral::derive_param_computed()</code> like a calculator to derive new parameters/rows based on existing ones</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-27_admiral/valuelevel/derive_param_computed.html" class="no-external">
 <div class="listing-date">
 Jun 27, 2023
 </div>
 <div class="listing-author">
 Kangjie Zhang
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="R,shiny,community,admiral" data-listing-date-sort="1687824000000" data-listing-file-modified-sort="1701112083579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
-<div class="thumbnail">
-<p><a href="./posts/2023-06-27__hackathon_app/index.html"> <img src="./posts/2023-06-27__hackathon_app/shiny_klee.png" class="thumbnail-image" style="height: 220px;"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-06-27__hackathon_app/index.html">
-<h3 class="no-anchor listing-title">
-Hackathon Feedback Application
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('shiny'); return false;">
-shiny
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('community'); return false;">
-community
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('admiral'); return false;">
-admiral
-</div>
-</div>
-<a href="./posts/2023-06-27__hackathon_app/index.html">
-<div class="listing-description">
-<p>Going through the process of creating a shiny app for the <code>admiral</code> hackathon. The shiny app allows users to check their solutions autonomously, gives feedback, and rates their results.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-06-27__hackathon_app/index.html">
-<div class="listing-date">
-Jun 27, 2023
-</div>
-<div class="listing-author">
-Stefan Thoma
 </div>
 </a>
 </div>
@@ -796,18 +1946,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -839,11 +1978,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/pharmaverse\.github\.io\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -853,8 +2031,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -866,7 +2053,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -910,6 +2220,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -935,6 +2246,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -995,6 +2332,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
 
 
 
